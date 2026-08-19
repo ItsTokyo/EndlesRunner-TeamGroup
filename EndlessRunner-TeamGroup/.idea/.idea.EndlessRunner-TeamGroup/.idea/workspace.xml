@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6912b96-58a5-4418-9ebe-5d5f0e3cb566" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.8350789013624969" />
+      <entry key="MS500" value="4.14589199411863" />
+      <entry key="S2" value="5.429716556675914" />
+      <entry key="S5" value="5.762026911164411" />
+      <entry key="S10" value="5.9379747725887375" />
+      <entry key="S30" value="7.875393199406872" />
+      <entry key="S60" value="12.062387826199936" />
+      <entry key="M2" value="21.749521014510776" />
+      <entry key="M5" value="48.820840464478536" />
+      <entry key="M10" value="75.27689106213354" />
+      <entry key="M15" value="89.33085385121007" />
+      <entry key="M30" value="107.67437334813611" />
+      <entry key="H1" value="118.9567100591299" />
+      <entry key="H2" value="125.23871900368073" />
+      <entry key="H4" value="128.55679819794483" />
+      <entry key="D1" value="131.41720813102143" />
+      <entry key="W1" value="131.91652229937432" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.55134712551634E-171" />
+      <entry key="S2" value="3.126212366879981E-43" />
+      <entry key="S5" value="1.0062031581817766E-17" />
+      <entry key="S10" value="3.6117527253666264E-9" />
+      <entry key="S30" value="0.002699061923499778" />
+      <entry key="S60" value="0.09499652124222233" />
+      <entry key="M2" value="0.690932905020216" />
+      <entry key="M5" value="2.933313524624772" />
+      <entry key="M10" value="5.345781294822126" />
+      <entry key="M15" value="6.691078737156561" />
+      <entry key="M30" value="8.50505422440841" />
+      <entry key="H1" value="9.650361227433336" />
+      <entry key="H2" value="10.29709052092764" />
+      <entry key="H4" value="10.641173419428235" />
+      <entry key="D1" value="10.939140495684207" />
+      <entry key="W1" value="10.9912795286456" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.7098529180317092" />
+      <entry key="MS500" value="4.0153897010081305" />
+      <entry key="S2" value="5.374886902500308" />
+      <entry key="S5" value="5.737521236572148" />
+      <entry key="S10" value="5.923081775534193" />
+      <entry key="S30" value="7.852021029563827" />
+      <entry key="S60" value="12.118300433927157" />
+      <entry key="M2" value="22.384494121331972" />
+      <entry key="M5" value="51.68162157420688" />
+      <entry key="M10" value="80.55767518432216" />
+      <entry key="M15" value="95.96762584569657" />
+      <entry key="M30" value="116.14478639595268" />
+      <entry key="H1" value="128.58737033586263" />
+      <entry key="H2" value="135.52528504852907" />
+      <entry key="H4" value="139.19252985536616" />
+      <entry key="D1" value="142.3554157371615" />
+      <entry key="W1" value="142.90766790968252" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="AISelfReview" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3I9CQXLHY67Mw4Vu6iPLeAMuXDP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.17f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\gebarraud\Documents\GitHub\Endless Runner Team Group\EndlessRunner-TeamGroup&quot; -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\gebarraud\Documents\GitHub\Endless Runner Team Group\EndlessRunner-TeamGroup" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.17f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\gebarraud\Documents\GitHub\Endless Runner Team Group\EndlessRunner-TeamGroup&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\gebarraud\Documents\GitHub\Endless Runner Team Group\EndlessRunner-TeamGroup" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6912b96-58a5-4418-9ebe-5d5f0e3cb566" name="Changes" comment="" />
+      <created>1787167382538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787167382538</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
