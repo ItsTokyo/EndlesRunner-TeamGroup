@@ -5,8 +5,7 @@ public class TimerScaler : MonoBehaviour
 {
 
     [SerializeField] private int realTime = 0;
-    [SerializeField] private float timeScale = 1f;
-    [SerializeField] private float score = 0f;
+    public float timeScale = 1f;
 
     private void Start()
     {
@@ -21,21 +20,15 @@ public class TimerScaler : MonoBehaviour
 
             realTime++;
             DifficultyScale();
-            ScoreCalculation(1f);
         }
     }
     private void DifficultyScale()
     {
-        if (realTime >= 10)
+        if (realTime >= 1)
         {
             realTime = 0;
             timeScale += .5f;
         }
     }
 
-    private void ScoreCalculation(float points)
-    {
-        float total = (timeScale * points);
-        score += total;
-    }
 }
