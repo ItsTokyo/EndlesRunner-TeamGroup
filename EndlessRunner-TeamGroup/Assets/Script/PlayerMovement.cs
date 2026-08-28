@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 playerPos;
     private PlayerInputs input;
     private Rigidbody rb;
-    private Vector2 moveUp;
-    private Vector2 moveDown;
+    private Vector3 moveUp;
+    private Vector3 moveDown;
+    public float speed;
 
     void Awake()
     {
@@ -19,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         input.Movement.Interact.performed += ctx => Interact();
 
 
-
+        speed = 7 * Time.deltaTime;
 
         rb = GetComponent<Rigidbody>();
 
@@ -34,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         playerPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-
+        MoveForward();
     }
 
     void Update()
@@ -45,11 +46,11 @@ public class PlayerMovement : MonoBehaviour
     // ReSharper disable Unity.PerformanceAnalysis
     private void MoveUp()
     {
-        if (playerPos.y <= 15f)
+        if (playerPos.y < 13f)
         {
             
-            moveUp += new Vector2(playerPos.x, playerPos.y += 7);
-            transform.position = moveUp;
+            moveUp += new Vector3(playerPos.x, playerPos.y += 7, playerPos.z);
+            transform.position = playerPos;
             Debug.Log("Up");
         }
     }
@@ -57,12 +58,18 @@ public class PlayerMovement : MonoBehaviour
     // ReSharper disable Unity.PerformanceAnalysis
     private void MoveDown()
     {
-        if (playerPos.y <= 15)
+        if (playerPos.y > 0)
         {
-            moveDown += new Vector2(playerPos.x, playerPos.y -= 7);
-            transform.position = moveDown;
+            moveDown += new Vector3(playerPos.x, playerPos.y -= 7, playerPos.z);
+            transform.position = playerPos;
             Debug.Log("Down");
         }
+    }
+
+    private void MoveForward()
+    {
+        playerPos.x += speed;
+        transform.position = playerPos;
     }
     void OnEnable()
     {
