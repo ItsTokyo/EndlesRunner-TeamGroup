@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
 public class PlayerPosition : MonoBehaviour
 {
@@ -8,19 +7,27 @@ public class PlayerPosition : MonoBehaviour
     [SerializeField] private float furthestX;
     [SerializeField] private float score;
 
+    [SerializeField] private int scoreDisplay;
+
+    [SerializeField] private float distanceTag;
+    [SerializeField] private float distanceAcceleration;
     [SerializeField] private TimerScaler timeScaler;
     void Start()
     {
-          
+        if (playerPostion != null)
+        {
+            furthestX = playerPostion.position.x;
+        }
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
-      
+
         if (playerPostion != null)
         {
-            ScoreCalculation(targetX = playerPostion.position.x);
+            targetX = playerPostion.position.x;
+            ScoreCalculation(targetX);
         }
 
     }
@@ -34,7 +41,16 @@ public class PlayerPosition : MonoBehaviour
 
         furthestX = latestX;
 
-        score = (int)furthestX * timeScaler.timeScale;
-        
+        if (furthestX == latestX)
+        {
+            distanceTag++;
+        }
+
+
+        score = distanceTag * distanceAcceleration * timeScaler.timeScale * Time.deltaTime;
+
+        distanceAcceleration += .1f * Time.deltaTime;
+
+        scoreDisplay = Mathf.RoundToInt(score);
     }
 }

@@ -24,7 +24,7 @@ public class TimerScaler : MonoBehaviour
     }
     private void DifficultyScale()
     {
-        if (realTime >= 1)
+        if (realTime >= 10)
         {
             realTime = 0;
             timeScale += .5f;
