@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class LevelBuilder : MonoBehaviour
@@ -10,25 +9,27 @@ public class LevelBuilder : MonoBehaviour
 
     [SerializeField] private float spawnthreshold;
     [SerializeField] private float spawnDistance;
+    [SerializeField] private float nextSpawn;
 
     [SerializeField] private PlayerPosition playerPosition;
-    void Start()
+    private void Start()
     {
-        
+        nextSpawn = spawnDistance;
     }
-
-    
     void Update()
     {
-        if (playerPosition.furthestX + spawnthreshold >= playerPosition.furthestX + spawnDistance)
+        if (playerPosition.furthestX + spawnthreshold >= nextSpawn)
         {
             SpawnNextSegment();
         }
     }
-
     private void SpawnNextSegment()
     {
+        GameObject levelSegment = ChooseSegment();
 
+        Instantiate(levelSegment, new Vector3(nextSpawn, 0f, 0f), Quaternion.identity);
+
+        nextSpawn += spawnDistance;
     }
     GameObject ChooseSegment()
     {
