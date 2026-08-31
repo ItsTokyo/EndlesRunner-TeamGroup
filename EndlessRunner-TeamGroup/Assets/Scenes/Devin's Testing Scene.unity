@@ -155,6 +155,9 @@ MonoBehaviour:
   targetX: 0
   furthestX: 0
   score: 0
+  scoreDisplay: 0
+  distanceTag: 0
+  distanceAcceleration: 0
   timeScaler: {fileID: 1470586426}
 --- !u!136 &1136108464
 CapsuleCollider:
@@ -245,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 1136108462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.67942, y: -1.33301, z: 7.95322}
+  m_LocalPosition: {x: 0, y: -1.33301, z: 7.95322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

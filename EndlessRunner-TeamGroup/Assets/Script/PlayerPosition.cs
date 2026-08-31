@@ -4,7 +4,7 @@ public class PlayerPosition : MonoBehaviour
 {
     public Transform playerPostion;
     [SerializeField] private float targetX;
-    [SerializeField] private float furthestX;
+    public float furthestX;
     [SerializeField] private float score;
 
     [SerializeField] private int scoreDisplay;
