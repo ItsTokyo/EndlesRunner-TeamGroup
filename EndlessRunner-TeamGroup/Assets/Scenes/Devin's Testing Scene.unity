@@ -8840,7 +8840,7 @@ Transform:
   m_GameObject: {fileID: 214950900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.31662, y: 5.6219, z: -13.33663}
+  m_LocalPosition: {x: -2.8, y: 5.6219, z: -13.33663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -87335,6 +87335,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5ca48a18ca39684a8d476833b55bb7d, type: 3}
   m_PrefabInstance: {fileID: 1898154174}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1899816464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899816466}
+  - component: {fileID: 1899816465}
+  m_Layer: 0
+  m_Name: LevelBuilderManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1899816465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899816464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caad8fe79e5e603429f5414bacfe9bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelBuilder
+  easySegments:
+  - {fileID: 214950900}
+  mediumSegments:
+  - {fileID: 214950900}
+  hardSegments:
+  - {fileID: 214950900}
+  spawnthreshold: 85
+  spawnDistance: 90
+  nextSpawn: 0
+  playerPosition: {fileID: 9190747486923360859}
+--- !u!4 &1899816466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899816464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.06577, y: 9.24116, z: -11.91041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1901789885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 051b89bc66eb4c5448d60df93d1523f6, type: 3}
@@ -99646,7 +99700,7 @@ Transform:
   m_GameObject: {fileID: 3364497348624820214}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.27, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99754,3 +99808,4 @@ SceneRoots:
   - {fileID: 4188295520334754639}
   - {fileID: 1645874934}
   - {fileID: 214950901}
+  - {fileID: 1899816466}

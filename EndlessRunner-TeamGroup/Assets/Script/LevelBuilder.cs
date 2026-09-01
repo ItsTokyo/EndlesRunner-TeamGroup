@@ -27,7 +27,7 @@ public class LevelBuilder : MonoBehaviour
     {
         GameObject levelSegment = ChooseSegment();
 
-        Instantiate(levelSegment, new Vector3(nextSpawn, 0f, 0f), Quaternion.identity);
+        Instantiate(levelSegment, new Vector3(nextSpawn, 5.6219f, -13.33663f), Quaternion.identity);
 
         nextSpawn += spawnDistance;
     }
