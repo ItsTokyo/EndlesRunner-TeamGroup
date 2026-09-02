@@ -1,38 +1,55 @@
+using UnityEditor.UI;
 using UnityEngine;
 
 public class CollectableHandler : MonoBehaviour
 {
-
-    public int collectType;
-    public int powerType;
-    public int value;
-    public GameObject player;
     
-    void Collect()
+    public GameObject player;
+    public PlayerPosition playerPosition;
+    public Collectable collectable;
+
+    public void Collect(Collectable collectable)
     {
-        // Type 0 collectables are score items, should just increase score.
-        if (collectType == 0)
+        // Type 0 collectables are score items, should just increase score by value.
+        if (collectable.collectType == 0)
         {
-            
+            playerPosition.collectableValue += collectable.value;
         }
-        else if (collectType == 1)
+        // Type 1 collectables are powerups, either Rewind or Skip forward collectables.
+        else if (collectable.collectType == 1)
         {
-            if (powerType == 0)
+            // Rewind collectables re-set the player's current x value by the value.
+            if (collectable.powerType == 0)
             {
-                
+                player.GetComponent<PlayerMovement>().playerPos.x -= collectable.value;
+                player.transform.position = player.GetComponent<PlayerMovement>().playerPos;
             }
-            else if (powerType == 1)
+            // Skip collectables should move the player ahead, setting a new furthest X and ensuring there's no obstacle there.
+            else if (collectable.powerType == 1)
             {
-                
+                player.GetComponent<PlayerMovement>().playerPos.x += collectable.value;
+                player.transform.position = player.GetComponent<PlayerMovement>().playerPos;
             }
         }
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // Makes sure it's colliding with the player.
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Collected item.");
+            Collect(collectable);
+            Destroy(gameObject);
+        }
+    }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerPosition = player.GetComponent<PlayerPosition>();
+        collectable = GetComponent<Collectable>();
     }
 
     // Update is called once per frame

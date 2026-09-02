@@ -5,7 +5,8 @@ public class PlayerPosition : MonoBehaviour
     public Transform playerPostion;
     [SerializeField] private float targetX;
     public float furthestX;
-    [SerializeField] private float score;
+    public float score;
+    public int collectableValue;
 
     [SerializeField] private int scoreDisplay;
 
@@ -47,7 +48,7 @@ public class PlayerPosition : MonoBehaviour
         }
 
 
-        score = distanceTag * distanceAcceleration * timeScaler.timeScale * Time.deltaTime;
+        score = distanceTag * distanceAcceleration * timeScaler.timeScale * Time.deltaTime + collectableValue;
 
         distanceAcceleration += .1f * Time.deltaTime;
 
