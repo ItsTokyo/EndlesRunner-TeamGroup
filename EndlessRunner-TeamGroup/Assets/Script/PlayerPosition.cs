@@ -6,10 +6,9 @@ public class PlayerPosition : MonoBehaviour
     public Transform playerPostion;
     [SerializeField] private float targetX;
     public float furthestX;
-    [SerializeField] private float score;
+    public float score;
     [SerializeField] private TMP_Text scoreUI;
     [SerializeField] private TMP_Text distanceUI;
-    public float score;
     public int collectableValue;
 
     [SerializeField] private int scoreDisplay;
