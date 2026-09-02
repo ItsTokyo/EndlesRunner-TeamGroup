@@ -208,6 +208,7 @@ MonoBehaviour:
   score: 0
   scoreUI: {fileID: 1793079587}
   distanceUI: {fileID: 1000208640}
+  collectableValue: 0
   scoreDisplay: 0
   distanceTag: 0
   distanceAcceleration: 0
