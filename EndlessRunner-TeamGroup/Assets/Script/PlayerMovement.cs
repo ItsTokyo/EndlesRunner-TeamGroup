@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 moveDown;
     public float speed;
 
+    [SerializeField] private TimerScaler scaler;
     void Awake()
     {
         input = new PlayerInputs();
@@ -27,7 +29,10 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
     }
-
+    private void Start()
+    {
+        StartCoroutine(SpeedIncrease());
+    }
     private void Interact()
     {
         Debug.Log("Interact");
@@ -45,6 +50,16 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
+    }
+
+    private IEnumerator SpeedIncrease()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10f);
+
+            speed += 1 * scaler.timeScale;
+        }
     }
 
     // ReSharper disable Unity.PerformanceAnalysis
