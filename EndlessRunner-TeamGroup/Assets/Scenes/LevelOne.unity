@@ -255,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   playerPos: {x: 0, y: 0, z: 0}
   speed: 0
+  scaler: {fileID: 926495603}
 --- !u!136 &65367946
 CapsuleCollider:
   m_ObjectHideFlags: 0
