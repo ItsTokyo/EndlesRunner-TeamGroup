@@ -28,7 +28,12 @@ public class Player : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-        } 
+        }
+
+        if (other.CompareTag("Collectable"))
+        {
+            other.Collect();
+        }
     }
 
    
