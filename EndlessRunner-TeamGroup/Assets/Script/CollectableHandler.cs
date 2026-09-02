@@ -18,16 +18,26 @@ public class CollectableHandler : MonoBehaviour
         // Type 1 collectables are powerups, either Rewind or Skip forward collectables.
         else if (collectable.collectType == 1)
         {
-            // Rewind collectables re-set the player's current x value by the value.
+            // Rewind collectables re-set the player's current x value by the value, and removing all obstacles before the position.
             if (collectable.powerType == 0)
             {
                 player.GetComponent<PlayerMovement>().playerPos.x -= collectable.value;
+                foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
+                    if (obstacle.transform.position.x <= player.GetComponent<PlayerMovement>().playerPos.x + 5)
+                    {
+                        Destroy(obstacle);
+                    }
                 player.transform.position = player.GetComponent<PlayerMovement>().playerPos;
             }
             // Skip collectables should move the player ahead, setting a new furthest X and ensuring there's no obstacle there.
             else if (collectable.powerType == 1)
             {
                 player.GetComponent<PlayerMovement>().playerPos.x += collectable.value;
+                foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
+                    if (obstacle.transform.position.x <= player.GetComponent<PlayerMovement>().playerPos.x + 5)
+                    {
+                        Destroy(obstacle);
+                    }
                 player.transform.position = player.GetComponent<PlayerMovement>().playerPos;
             }
         }

@@ -206,6 +206,7 @@ MonoBehaviour:
   targetX: 0
   furthestX: 0
   score: 0
+  collectableValue: 0
   scoreDisplay: 0
   distanceTag: 0
   distanceAcceleration: 0
