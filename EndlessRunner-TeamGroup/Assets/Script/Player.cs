@@ -29,10 +29,10 @@ public class Player : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-
+        /*This will trigger the collectable handler's script for collecting a score item or powerup.*/
         if (other.CompareTag("Collectable"))
         {
-            other.Collect();
+            
         }
     }
 
