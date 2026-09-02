@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -29,11 +30,8 @@ public class Player : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        
         /*This will trigger the collectable handler's script for collecting a score item or powerup.*/
-        if (other.CompareTag("Collectable"))
-        {
-            
-        }
     }
 
    

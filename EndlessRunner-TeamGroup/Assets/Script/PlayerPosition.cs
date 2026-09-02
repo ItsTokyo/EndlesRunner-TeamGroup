@@ -9,6 +9,8 @@ public class PlayerPosition : MonoBehaviour
     [SerializeField] private float score;
     [SerializeField] private TMP_Text scoreUI;
     [SerializeField] private TMP_Text distanceUI;
+    public float score;
+    public int collectableValue;
 
     [SerializeField] private int scoreDisplay;
 
@@ -50,7 +52,7 @@ public class PlayerPosition : MonoBehaviour
         }
 
 
-        score = distanceTag * distanceAcceleration * timeScaler.timeScale * Time.deltaTime;
+        score = distanceTag * distanceAcceleration * timeScaler.timeScale * Time.deltaTime + collectableValue;
 
         distanceAcceleration += .1f * Time.deltaTime;
 
