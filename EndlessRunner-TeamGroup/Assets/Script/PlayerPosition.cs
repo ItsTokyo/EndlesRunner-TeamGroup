@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerPosition : MonoBehaviour
@@ -6,6 +7,8 @@ public class PlayerPosition : MonoBehaviour
     [SerializeField] private float targetX;
     public float furthestX;
     [SerializeField] private float score;
+    [SerializeField] private TMP_Text scoreUI;
+    [SerializeField] private TMP_Text distanceUI;
 
     [SerializeField] private int scoreDisplay;
 
@@ -52,5 +55,8 @@ public class PlayerPosition : MonoBehaviour
         distanceAcceleration += .1f * Time.deltaTime;
 
         scoreDisplay = Mathf.RoundToInt(score);
+
+        scoreUI.text = "Score: " + scoreDisplay.ToString();
+        distanceUI.text = "Distance: " + furthestX.ToString() + "m";
     }
 }
