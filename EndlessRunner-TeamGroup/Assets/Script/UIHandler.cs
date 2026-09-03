@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class UIHandler : MonoBehaviour
 {
+    public AudioSource selectSound;
     public GameObject player;
     private PlayerInputs input;
     public Vector3 playerPos;
@@ -30,18 +31,21 @@ public class UIHandler : MonoBehaviour
     //List of Button interactions
     public void StartGame()
     {
+        selectSound.Play();
         SceneManager.LoadScene("LevelOne");
     }
     
 
     public void QuitGame()
     {
+        selectSound.Play();
         Application.Quit();
         Debug.Log("Quit");
     }
 
     public void Menu()
     {
+        selectSound.Play();
         SceneManager.LoadScene("MainMenu");
     }
     

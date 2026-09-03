@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CollectableHandler : MonoBehaviour
 {
-    
+
     public GameObject player;
     public PlayerPosition playerPosition;
     public Collectable collectable;
@@ -13,6 +13,7 @@ public class CollectableHandler : MonoBehaviour
         // Type 0 collectables are score items, should just increase score by value.
         if (collectable.collectType == 0)
         {
+           
             playerPosition.collectableValue += collectable.value;
         }
         // Type 1 collectables are powerups, either Rewind or Skip forward collectables.
@@ -60,6 +61,7 @@ public class CollectableHandler : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerPosition = player.GetComponent<PlayerPosition>();
         collectable = GetComponent<Collectable>();
+      
     }
 
     // Update is called once per frame
