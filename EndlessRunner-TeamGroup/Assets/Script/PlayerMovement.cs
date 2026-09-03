@@ -102,6 +102,9 @@ public class PlayerMovement : MonoBehaviour
         input.Movement.Disable();
     }
 
-  
+    public void IsAlive()
+    {
+        
+    }
     
 }

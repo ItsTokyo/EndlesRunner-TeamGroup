@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,7 @@ public class UIHandler : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+
         input = new PlayerInputs();
         input.Movement.Up.performed += ctx => MoveUp();
         input.Movement.Down.performed += ctx => MoveDown();
@@ -22,7 +24,7 @@ public class UIHandler : MonoBehaviour
     {
         //Gets players pos every frame
         playerPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
-        
+
     }
 
     //List of Button interactions
@@ -36,6 +38,11 @@ public class UIHandler : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Quit");
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
     
     private void Interact()
@@ -66,6 +73,8 @@ public class UIHandler : MonoBehaviour
             Debug.Log("Down");
         }
     }
+
+ 
     
     void OnEnable()
     {
