@@ -5,11 +5,13 @@ public class Player : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
-    public int health;
+    [SerializeField] public static int health;
+    public GameObject deathScreen;
     private Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        deathScreen.SetActive(false);
         health = 3;
     }
 
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
             health -= 1;
             if (health <= 0)
             {
+                deathScreen.SetActive(true);
                 Destroy(gameObject);
             }
         }
