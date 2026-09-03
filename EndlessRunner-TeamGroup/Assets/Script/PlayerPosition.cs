@@ -37,7 +37,8 @@ public class PlayerPosition : MonoBehaviour
     }
     private void ScoreCalculation(float latestX)
     {
-
+        //when the two are identicle the score will increase by having a seperate value be a middle man for the score. So that if the player is skipped ahead 
+        //or sent back the score will not decrease.
         if (latestX < furthestX)
         {
             return;

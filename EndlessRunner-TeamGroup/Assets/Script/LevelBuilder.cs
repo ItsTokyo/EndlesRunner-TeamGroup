@@ -18,6 +18,7 @@ public class LevelBuilder : MonoBehaviour
     }
     void Update()
     {
+        //This math equation is what builds the level. Values are entered into the hiearchy and the level will instanciate that distance away.
         if (playerPosition.furthestX + spawnthreshold >= nextSpawn)
         {
             SpawnNextSegment();
@@ -33,6 +34,8 @@ public class LevelBuilder : MonoBehaviour
     }
     GameObject ChooseSegment()
     {
+        //An if else statement determining which level segement will be used
+
         float difficulty = playerPosition.furthestX;
 
         if (difficulty < 250f)

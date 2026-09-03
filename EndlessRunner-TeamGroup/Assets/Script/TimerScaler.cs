@@ -23,7 +23,7 @@ public class TimerScaler : MonoBehaviour
         StartCoroutine(Clock());   
     }
 
-    private IEnumerator Clock()
+    private IEnumerator Clock() //Is a clock for fakeTime which is how the game scales and realTime which is just a normal clock
     {
         while (true)
         {
